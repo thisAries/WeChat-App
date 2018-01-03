@@ -15,6 +15,7 @@
       将Demo下载好后 ，可以用开发工具打开 ，也可以在微信上预览。
 
 四 、 开发介绍 ：
+
 (1)
       我们可以看到根目录下有 pages 和 utils 文件夹 及 app.js、app.json、app.wxss、project.config.json;
       这些我们先不管，直接打开app.json
@@ -34,12 +35,14 @@
       
       对象中"pages" 对应的是 pages文件夹, 数组中的每一项表示 "根目录pages文件夹" / "index文件夹" / "index.wxml",
       如果你在这个对象数组中直接按照格式书写 "pages/home/home" , 工具会自动在pages文件夹下生成 home 文件夹。
+
 (2)   我们暂且称呼home 为 页面组件
       这时，你会发现所有的页面组件都是基本的套路 
               .js--逻辑
               .json--配置 
               .wxml--html 
               .wxss--css
+
       <1>我们先看.js
             Page({
               data: {},
