@@ -18,6 +18,7 @@
 
 (1)
       我们可以看到根目录下有 pages 和 utils 文件夹 及 app.js、app.json、app.wxss、project.config.json;
+
       这些我们先不管，直接打开app.json
       
       {
@@ -43,26 +44,20 @@
               .wxml--html 
               .wxss--css
 
-      <1>我们先看.js
-
-            Page({
-              data: {},
-              onLoad: function (options) {}
-              //页面上拉触底事件的处理函数   
-              onReachBottom: function (){},
-              //用户点击右上角分享  
-              onShareAppMessage: function () {}
-            })
-
        基本和vue 、 react 框架的思路是一样的。
 
-       data{name:'zdd'} ----增:直接命名 ----改:this.setData({name:'Aries'}) ----用:{{name}},属性中：class='{{name}}' => class='Aries'。
-       //
-       function方法是与data同级，各级之间用逗号隔开。
+然后再介绍下一些坑
+
+//data{name:'zdd'} ----增:直接命名 ----改:this.setData({name:'Aries'}) ----用:{{name}},属性中：class='{{name}}' == class='Aries'。
+      
+//function方法是与data同级，各级之间用逗号隔开。
+
        写----getList(){}  or  ----getList:function(){}
-       用----bindtap='getList'  ,官方提供的绑定方法是bindtap,你可以理解成点击函数onclick;值得注意的是这里的方法不能带(),也不能传值。
-       方法传值只能是 "在标签内 自定义属性 data-名称='属性值' , 在js中将e或event事件给方法，调用e.target.dataset.名称"
-       //
-      
-        
+       用----bindtap='getList' 
+
+官方提供的绑定方法是bindtap,你可以理解成点击函数onclick;值得注意的是这里的方法不能带(),也不能传值。
+
+方法传值只能是 "在标签内 自定义属性 data-名称='属性值' , 在js中将e或event事件给方法，调用e.target.dataset.名称"
+
+//
 
