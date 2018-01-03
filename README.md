@@ -44,15 +44,18 @@
               .wxss--css
 
       <1>我们先看.js
+
             Page({
               data: {},
               onLoad: function (options) {}
-              /*页面上拉触底事件的处理函数*/   
+              //页面上拉触底事件的处理函数   
               onReachBottom: function (){},
-              /*用户点击右上角分享*/  
+              //用户点击右上角分享  
               onShareAppMessage: function () {}
             })
+
        基本和vue 、 react 框架的思路是一样的。
+
        data{name:'zdd'} ----增:直接命名 ----改:this.setData({name:'Aries'}) ----用:{{name}},属性中：class='{{name}}' => class='Aries'。
        //
        function方法是与data同级，各级之间用逗号隔开。
